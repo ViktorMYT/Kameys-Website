@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  background: #428683;
+}
+
+.sidenav {
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #5cb2ae;
+  overflow-x: hidden;
+  padding: 8px 0;
+  border-radius: 25px;
+  box-shadow: 3px 3px 5px 2px rgba(0,0,0,.4);
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #09048e;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #514e8d;
+}
+
+.main {
+  margin-left: 205px;
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.main {
+	background: #5cb2ae;
+	border-radius: 25px;
+	text-align: center;
+	box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+}
+
+.main h {
+	color: white;
+	text-align: center;
+}
+
+.main img {
+	border-radius: 25px;
+}
+
+.dot {
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+} 
+
+</style>
+<script>
+function ShowAbout() {
+    var T = document.getElementById("about"),
+        displayValue = "";
+    if (T.style.display == "")
+        displayValue = "none";
+
+    T.style.display = displayValue;
+    
+    var K = document.getElementById("mc")
+    if (K.style.display == "")
+        ddisplayValue = "none";
+    K.style.display = ddisplayValue;
+}
+function ShowMc() {
+    var T = document.getElementById("mc"),
+        displayValue = "";
+    if (T.style.display == "")
+        displayValue = "none";
+
+    T.style.display = displayValue;
+    
+    var K = document.getElementById("about")
+    if (K.style.display == "")
+        ddisplayValue = "none";
+    K.style.display = ddisplayValue;
+}
+</script>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="#about" onclick="ShowAbout()">About Me</a>
+  <a href="#mc" onclick="ShowMc()">Kamey's SMP</a>
+</div>
+
+<div class="main">
+  <div id="about" style="display:none">
+    <h>About me</h>
+    <p>I am a high school student from Serbia interested in FOS software and a longtime user of Linux, I am interested in web design and development and I hope that one day I will be able to work as a web designer or programmer, I like learning java and playing games in my free time. My favorite video game is Minecraft and that's why I decided to open a small SMP server.</p>
+  </div>
+  <div id="mc" style="display:none">
+    <h>Kamey's SMP</h>
+    <p> The goal of this server is just to have fun and chill, I don't want money but quality gameplay, I accept donations, but only if you want to donate, this server is not ptw (pay to win), so everyone is equal, This server always uses the latest version minecraft, assuring that you will always have the best possible experience, we try to be as family as possible, so if you are interested in fun then this server is for you, No matter where you come from or your nationality, you are all welcome.</p>
+    <script src="https://minecraft-mp.com/embed.js?id=288938&type=votes&size=normal"></script>
+    <br>
+    <img src="img/2021-06-24_16.02.45.png" width=50% /><img src="img/2021-06-24_00.30.04.png" width=50% />
+  </div>
+  <p style="color: #5cb2ae">​</p>
+</div>  
+</body>
+</html> 
